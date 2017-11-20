@@ -4,14 +4,10 @@
   become: yes
   become_user: root
 
-- include: pba.yml
+- include: eigen.yml
   become: yes
   become_user: root
 
-- include: siftgpu.yml
-  become: yes
-  become_user: root
-
-- include: visualsfm.yml
+- include: openmvg.yml
   become: yes
   become_user: root

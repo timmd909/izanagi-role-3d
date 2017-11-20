@@ -3,16 +3,15 @@
 - name: Install required support libraries
   apt: name="{{ item }}" state=present
   with_items:
-    - freeglut3-dev
-    - libdevil-dev
-    - libglew-dev
-    - libgtk2.0-0
-    - libgtk2.0-dev
-    - libgtk2.0-dev
-    - liblapack-dev
+    - libboost-iostreams-dev
+    - libboost-program-options-dev
+    - libopencv-dev
+    - libboost-system-dev
+    - libcgal-dev
+    - libcgal-qt5-dev
+    - libboost-serialization-dev
 
 - name: Install required binaries
   apt: name="{{ item }}" state=present
   with_items:
     - git
-    - libgtk2.0-bin

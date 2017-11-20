@@ -1,3 +1,2 @@
-visualsfm_path: /opt/visualsfm
-siftgpu_path: /opt/siftgpu
-pba_path: /opt/pba
+openmvg_path: /opt/openmvg
+eigen_path: /opt/eigen
