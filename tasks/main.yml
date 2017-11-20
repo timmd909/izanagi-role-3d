@@ -1,5 +1,17 @@
 ---
 
-- include: "libraries.yml"
+- include: libraries.yml
+  become: yes
+  become_user: root
+
+- include: pba.yml
+  become: yes
+  become_user: root
+
+- include: siftgpu.yml
+  become: yes
+  become_user: root
+
+- include: visualsfm.yml
   become: yes
   become_user: root

@@ -1,0 +1,3 @@
+visualsfm_path: /opt/visualsfm
+siftgpu_path: /opt/siftgpu
+pba_path: /opt/pba

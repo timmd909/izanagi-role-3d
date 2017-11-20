@@ -1,0 +1,13 @@
+---
+
+- name: Clone SiftGPU repo
+  git:
+    clone: yes
+    dest: "{{ siftgpu_path }}"
+    force: yes
+    repo: https://github.com/timmd909/SiftGPU.git
+    version: master
+
+- name: Build SiftGPU
+  make:
+    chdir: "{{ siftgpu_path }}"

@@ -3,11 +3,16 @@
 - name: Install required support libraries
   apt: name="{{ item }}" state=present
   with_items:
+    - freeglut3-dev
+    - libdevil-dev
+    - libglew-dev
     - libgtk2.0-0
-    - libgtk2.0-bin
     - libgtk2.0-dev
+    - libgtk2.0-dev
+    - liblapack-dev
 
 - name: Install required binaries
   apt: name="{{ item }}" state=present
   with_items:
     - git
+    - libgtk2.0-bin
